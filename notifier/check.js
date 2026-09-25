@@ -4,8 +4,9 @@ const HOUSEHOLD_ID = 'tita';
 const TIMEZONE = 'Europe/Bucharest';
 const REMINDER_WINDOW_MIN = 15;
 
+const rawServiceAccount = process.env.FIREBASE_SERVICE_ACCOUNT.replace(/^﻿/, '').trim();
 admin.initializeApp({
-  credential: admin.credential.cert(JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT)),
+  credential: admin.credential.cert(JSON.parse(rawServiceAccount)),
 });
 const db = admin.firestore();
 
