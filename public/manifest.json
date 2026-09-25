@@ -1,10 +1,11 @@
 {
-  "name": "Sarcini",
-  "short_name": "Sarcini",
+  "name": "Tasks",
+  "short_name": "Tasks",
   "start_url": "/",
+  "scope": "/",
   "display": "standalone",
-  "background_color": "#efece2",
-  "theme_color": "#efece2",
+  "background_color": "#fbe6ee",
+  "theme_color": "#fbe6ee",
   "icons": [
     { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
     { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" }
